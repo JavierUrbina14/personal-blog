@@ -4,11 +4,13 @@ import { About } from "../pages/About"
 import { Contact } from "../pages/Contact"
 import { Footer } from "../ui/Footer"
 import { Navbar } from "../ui/Navbar"
-import { Grid } from "@mui/material"
+import { Box } from "@mui/material"
 
 export const AppRouter = () => {
     return (
-        <Grid sx={{backgroundColor: "primary.main"}}>
+        <Box 
+        
+        sx={{backgroundColor: "primary.main", height: "100vh",}}>
             <Navbar />
             <Routes>
                 <Route path="/*" element={<Home />} />
@@ -16,6 +18,6 @@ export const AppRouter = () => {
                 <Route path="/about" element={<About />} />
             </Routes>
             <Footer />
-        </Grid>
+        </Box>
     )
 }

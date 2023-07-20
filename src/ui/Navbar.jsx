@@ -4,7 +4,7 @@ import { MaterialUISwitch } from "../components/SwitchButton"
 
 export const Navbar = () => {
     return (
-        <Grid container direction={"row"} justifyContent={"space-around"} alignItems={"center"} sx={{marginTop: "1rem"}}>
+        <Grid container direction={"row"} justifyContent={"space-around"} alignItems={"center"} sx={{paddingTop: "1rem"}}>
             <Grid>
                 <img style={{width: "2rem"}} src="img/blogging.png" alt="" />
             </Grid>

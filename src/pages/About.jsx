@@ -1,6 +1,7 @@
+import { PageLayout } from "../layout/PageLayout"
 
 export const About = () => {
     return (
-        <div>About</div>
+        <PageLayout>About</PageLayout>
     )
 }

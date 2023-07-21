@@ -1,6 +1,9 @@
+import { PageLayout } from "../layout/PageLayout"
 
 export const Contact = () => {
   return (
-    <div>Contact</div>
+    <PageLayout>
+      Contact
+    </PageLayout>
   )
 }

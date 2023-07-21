@@ -1,5 +1,4 @@
 import { createTheme } from "@mui/material";
-import { red } from "@mui/material/colors";
 
 export const LightTheme = createTheme({
     palette: {
@@ -7,8 +6,9 @@ export const LightTheme = createTheme({
             main: "#f0f4f4",
             footer: "#c0c4dc"
         },
-        error: {
-            main: red.A400
-        }
+        text:{
+            primary: "#21232A",
+        },
     },
 });
+

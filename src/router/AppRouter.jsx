@@ -8,6 +8,7 @@ import { Box } from "@mui/material"
 
 export const AppRouter = () => {
     return (
+        <>
         <Box 
         
         sx={{backgroundColor: "primary.main", height: "100vh",}}>
@@ -19,5 +20,6 @@ export const AppRouter = () => {
             </Routes>
             <Footer />
         </Box>
+        </>
     )
 }

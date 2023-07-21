@@ -1,14 +1,13 @@
 import { createTheme } from "@mui/material";
-import { red } from "@mui/material/colors";
 
 export const DarkTheme = createTheme({
     palette: {
         primary: {
             main: "#21232A",
-            footer: "#c0c4dc"
+            footer: "#000000"
         },
-        error: {
-            main: red.A400
-        }
+        text:{
+            primary: "#f0f4f4",
+        },
     },
 });

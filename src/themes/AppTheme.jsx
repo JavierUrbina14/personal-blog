@@ -1,13 +1,15 @@
+import { useContext } from 'react'
 import { ThemeProvider } from '@emotion/react'
 import { CssBaseline } from '@mui/material'
-import { LightTheme } from './LightTheme'
-import { DarkTheme } from './DarkTheme'
+import { DarkLightThemeContext } from '../context/DarkLightThemeContext';
 
-export const AppTheme = ({children}) => {
+export const AppTheme = ({ children }) => {
+    const { theme } = useContext(DarkLightThemeContext)
+
     return (
-        <ThemeProvider theme={ DarkTheme }>
+        <ThemeProvider theme={theme}>
             <CssBaseline />
-            { children }
+                {children}
         </ThemeProvider>
     )
 }

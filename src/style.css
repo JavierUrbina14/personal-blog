@@ -1,0 +1,11 @@
+.degradado {
+    background: -webkit-linear-gradient(#932120, #dd950f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sombreado {
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.75);
+}

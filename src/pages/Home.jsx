@@ -12,7 +12,7 @@ export const Home = () => {
                 </Typography>
                 <Typography variant="h6">Full-Stack Developer</Typography>
             </Grid>
-            <Grid container sx={{ gap: "1rem", marginTop: "1.5rem" }}>
+            <Grid display={"flex"} justifyContent={"center"} sx={{ gap: "1rem", marginTop: "3.5rem" }}>
                 <Link component={RouterLink} color={"inherit"} underline="hover" to="/projects">
                     <Button variant="contained" sx={{ color: "inherit", backgroundColor: "#Bf7625" }}>Ver projectos</Button>
                 </Link>

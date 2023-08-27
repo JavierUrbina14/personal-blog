@@ -14,7 +14,7 @@ export const PageLayout = ({ children, display = 'flex', flexDirection = 'column
                 flexDirection={flexDirection}
                 justifyContent={justifyContent}
                 alignItems={alignItems}
-                sx={{ height: "100%", marginTop: "2.5rem", marginBottom: "1rem" }}
+                sx={{ height: "100%", width: "100%", marginTop: "70px", marginBottom: "45px"}}
             >
                 <Navbar />
                 {children}

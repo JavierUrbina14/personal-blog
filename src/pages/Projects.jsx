@@ -8,8 +8,8 @@ export const Projects = () => {
             <Grid paddingBottom={10}>
                 <Typography className="degradado" variant="h3" fontWeight="bold">Proyectos</Typography>
             </Grid>
-            <Grid container spacing={2} paddingBottom={10}>
-                <Grid item xs={4}>
+            <Grid container spacing={4} paddingBottom={10} justifyContent={"center"}>
+                <Grid item>
                     <ProjectItem
                         imagePath={'img/Journal-app-img.png'}
                         projectPath={'https://journal-jt.netlify.app/'}
@@ -17,7 +17,7 @@ export const Projects = () => {
                         projectDescription={'Aplicación de notas con autenticación de usuarios'}
                     />
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item>
                     <ProjectItem
                         imagePath={'img/Gif-app-img.png'}
                         projectPath={'https://gifexpert-jt.netlify.app/'}
@@ -25,7 +25,7 @@ export const Projects = () => {
                         projectDescription={'Aplicación de gifs con buscador'}
                     />
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item>
                     <ProjectItem
                         imagePath={'img/heroes-app-img.png'}
                         projectPath={'https://heroes-jt.netlify.app/'}

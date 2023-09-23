@@ -48,9 +48,9 @@ export const SettingsMenu = () => {
                 open={open}
                 onClose={handleClose}
             >
-                <MenuItem onClick={handleLanguageMenuClick}>Idioma<KeyboardArrowRightIcon /></MenuItem>
+                <MenuItem onClick={handleLanguageMenuClick}>{t("settingsmenu.language")}<KeyboardArrowRightIcon /></MenuItem>
                 <Divider />
-                <MenuItem>Tema: <MaterialUISwitch checked={darkMode} onChange={handleDarkMode} /></MenuItem>
+                <MenuItem>{t("settingsmenu.theme")}<MaterialUISwitch checked={darkMode} onChange={handleDarkMode} /></MenuItem>
             </Menu>
 
             {/* Submenú de Idioma */}
@@ -67,8 +67,8 @@ export const SettingsMenu = () => {
                     horizontal: 'left',
                 }}
             >
-                <MenuItem onClick={() => handleChangeLanguage('es')}>Español</MenuItem>
-                <MenuItem onClick={() => handleChangeLanguage('en')}>Inglés</MenuItem>
+                <MenuItem onClick={() => handleChangeLanguage('es')}>{t("settingsmenu.es")}</MenuItem>
+                <MenuItem onClick={() => handleChangeLanguage('en')}>{t("settingsmenu.en")}</MenuItem>
             </Menu>
         </div>
     );

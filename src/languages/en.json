@@ -33,5 +33,11 @@
         "home": "Home",
         "about": "About",
         "contact": "Contact"
+    },
+    "settingsmenu": {
+        "language": "Language",
+        "es": "Spanish",
+        "en": "English",
+        "theme": "Theme: "
     }
 }

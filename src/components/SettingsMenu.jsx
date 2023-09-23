@@ -4,13 +4,16 @@ import { MaterialUISwitch } from './SwitchButton';
 import SettingsIcon from '@mui/icons-material/Settings';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import { DarkLightThemeContext } from '../context/DarkLightThemeContext';
+import { useTranslation } from 'react-i18next';
+
 
 export const SettingsMenu = () => {
+    const [t,i18n] = useTranslation("global")
     const [anchorEl, setAnchorEl] = useState(null);
-    const [languageMenuAnchorEl, setLanguageMenuAnchorEl] = useState(null); // Nuevo estado para el submenú de idioma
+    const [languageMenuAnchorEl, setLanguageMenuAnchorEl] = useState(null);
 
     const open = Boolean(anchorEl);
-    const openLanguageMenu = Boolean(languageMenuAnchorEl); // Nuevo estado para el submenú de idioma
+    const openLanguageMenu = Boolean(languageMenuAnchorEl);
     const { darkMode, handleDarkMode } = useContext(DarkLightThemeContext);
 
     const handleClick = (event) => {
@@ -21,6 +24,7 @@ export const SettingsMenu = () => {
         setLanguageMenuAnchorEl(event.currentTarget); // Abre el submenú de idioma
     };
 
+
     const handleLanguageMenuClose = () => {
         setLanguageMenuAnchorEl(null); // Cierra el submenú de idioma
     };
@@ -28,6 +32,11 @@ export const SettingsMenu = () => {
     const handleClose = () => {
         setAnchorEl(null);
     };
+
+    const handleChangeLanguage = (language) => {
+        i18n.changeLanguage(language);
+        setLanguageMenuAnchorEl(null); 
+    }
 
     return (
         <div>
@@ -58,10 +67,8 @@ export const SettingsMenu = () => {
                     horizontal: 'left',
                 }}
             >
-                {/* Agrega elementos de menú para el submenú de idioma aquí */}
-                <MenuItem onClick={handleLanguageMenuClose}>Español</MenuItem>
-                <MenuItem onClick={handleLanguageMenuClose}>Inglés</MenuItem>
-                {/* Agrega más opciones de idioma según sea necesario */}
+                <MenuItem onClick={() => handleChangeLanguage('es')}>Español</MenuItem>
+                <MenuItem onClick={() => handleChangeLanguage('en')}>Inglés</MenuItem>
             </Menu>
         </div>
     );

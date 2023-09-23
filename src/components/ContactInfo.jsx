@@ -1,19 +1,21 @@
 import { Grid } from "@mui/material"
+import { useTranslation } from "react-i18next"
 
 export const ContactInfo = () => {
+    const [t] = useTranslation("global")
     return (
         <Grid>
-            <h1>Información de contacto</h1>
-            <p>Tengo disponibilidad inmediata para cualquier tipo de contrato, sientase libre de enviar un email a traves del formulario o de manera independiente.</p>
+            <h1>{t("contactinfo.info")}</h1>
+            <p>{t("contactinfo.infotext")}</p>
             <ul>
                 <li>jav.torresu@gmail.com</li>
                 <li>+569 3024 9980</li>
                 <li>Santiago, Chile</li>
             </ul>
-            <h1>Redes sociales</h1>
+            <h1>{t("contactinfo.rrss")}</h1>
             <div>
-                <p>Linkedin</p>
-                <p>Twitter</p>
+                <p>{t("contactinfo.linkedin")}</p>
+                <p>{t("contactinfo.twitter")}</p>
             </div>
         </Grid>
     )

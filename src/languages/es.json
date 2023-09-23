@@ -1,0 +1,37 @@
+{
+    "home": {
+        "iam": "¡Hola! Soy",
+        "name": "Javier Urbina",
+        "role": "Desarrollador Full-Stack web",
+        "projects": "Ver proyectos",
+        "downloadcv": "Descargar Curriculum"
+    },
+    "projects": {
+        "projects": "Proyectos",
+        "journaldescription": "Aplicación de notas con autenticación de usuarios",
+        "gifdescription": "Aplicación de gifs con buscador",
+        "heroesdescription": "Aplicación de superhéroes con buscador"
+    },
+    "contact": {
+        "title": "Ponete en contacto ツ"
+    },
+    "contactform": {
+        "name": "Tu nombre",
+        "phone": "Tu telefono",
+        "email": "Tu email",
+        "message": "Tu mensaje",
+        "send": "Enviar"
+    },
+    "contactinfo": {
+        "info": "Información de contacto",
+        "infotext": "Tengo disponibilidad inmediata para cualquier tipo de contrato, sientase libre de enviar un email a traves del formulario o de manera independiente.",
+        "rrss": "Redes sociales",
+        "linkedin": "LinkedIn",
+        "twitter": "Twitter"
+    },
+    "navbar": {
+        "home": "Inicio",
+        "about": "Acerca",
+        "contact": "Contacto"
+    }
+}

@@ -1,12 +1,14 @@
 import { Grid, Typography } from "@mui/material"
 import { PageLayout } from "../layout/PageLayout"
 import { ProjectItem } from "../components/ProjectItem"
+import { useTranslation } from "react-i18next"
 
 export const Projects = () => {
+    const [t] = useTranslation("global")
     return (
         <PageLayout>
             <Grid paddingBottom={10}>
-                <Typography className="degradado" variant="h3" fontWeight="bold">Proyectos</Typography>
+                <Typography className="degradado" variant="h3" fontWeight="bold">{t("projects.projects")}</Typography>
             </Grid>
             <Grid container spacing={4} paddingBottom={10} justifyContent={"center"}>
                 <Grid item>
@@ -14,7 +16,7 @@ export const Projects = () => {
                         imagePath={'img/Journal-app-img.png'}
                         projectPath={'https://journal-jt.netlify.app/'}
                         projectTitle={'Journal App'}
-                        projectDescription={'Aplicación de notas con autenticación de usuarios'}
+                        projectDescription={t("projects.journaldescription")}
                     />
                 </Grid>
                 <Grid item>
@@ -22,7 +24,7 @@ export const Projects = () => {
                         imagePath={'img/Gif-app-img.png'}
                         projectPath={'https://gifexpert-jt.netlify.app/'}
                         projectTitle={'Gif App'}
-                        projectDescription={'Aplicación de gifs con buscador'}
+                        projectDescription={t("projects.gifdescription")}
                     />
                 </Grid>
                 <Grid item>
@@ -30,7 +32,7 @@ export const Projects = () => {
                         imagePath={'img/heroes-app-img.png'}
                         projectPath={'https://heroes-jt.netlify.app/'}
                         projectTitle={'Heroes App'}
-                        projectDescription={'Aplicación de superhéroes con buscador'}
+                        projectDescription={t("projects.heroesdescription")}
                     />
                 </Grid>
             </Grid>

@@ -1,5 +1,6 @@
 import { Button, Grid, TextField } from "@mui/material"
 import { useForm } from "../hooks/useForm"
+import { useTranslation } from "react-i18next"
 
 
 const initialFormContact = {
@@ -10,7 +11,7 @@ const initialFormContact = {
 }
 
 export const ContactForm = () => {
-
+    const [t] = useTranslation("global")
     const {name, phone, email, message, onInputChange} = useForm(initialFormContact);    
 
     const handleSubmit = (event) => {
@@ -23,7 +24,7 @@ export const ContactForm = () => {
             <Grid container spacing={2}>
                 <Grid item xs={4}>
                     <TextField
-                    label="Tu nombre"
+                    label={t("contactform.name")}
                     type="text"
                     fullWidth
                     color="warning"
@@ -36,7 +37,7 @@ export const ContactForm = () => {
                 </Grid>
                 <Grid item xs={4}>
                     <TextField
-                    label="Tu telefono"
+                    label={t("contactform.phone")}
                     type="text"
                     fullWidth
                     color="warning"
@@ -47,7 +48,7 @@ export const ContactForm = () => {
                 </Grid>
                 <Grid item xs={4}>
                     <TextField
-                    label="Tu e-mail"
+                    label={t("contactform.email")}
                     type="text"
                     fullWidth
                     color="warning"
@@ -58,7 +59,7 @@ export const ContactForm = () => {
                 </Grid>
                 <Grid item xs={12}>
                     <TextField
-                    label="Tu mensaje"
+                    label={t("contactform.message")}
                     type="text"
                     fullWidth
                     color="warning"
@@ -71,7 +72,7 @@ export const ContactForm = () => {
                 </Grid>
                 <Grid item container direction={"row"} justifyContent={"end"}>
                     <Button type='submit' variant="contained" sx={{ color: "inherit", backgroundColor: "#Bf7625" }}>
-                        Enviar
+                        {t("contactform.send")}
                     </Button>
                 </Grid>
             </Grid>

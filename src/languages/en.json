@@ -1,0 +1,37 @@
+{
+    "home": {
+        "iam": "Hi! I am",
+        "name": "Javier Urbina",
+        "role": "Full-Stack Web Developer",
+        "projects": "View projects",
+        "downloadcv": "Download CV"
+    },
+    "projects": {
+        "projects": "Projects",
+        "journaldescription": "Note-taking application with user authentication",
+        "gifdescription": "GIF application with search functionality",
+        "heroesdescription": "Superheroes application with search functionality"
+    },
+    "contact": {
+        "title": "Get in touch ツ"
+    },
+    "contactform": {
+        "name": "Your name",
+        "phone": "Your phone",
+        "email": "Your email",
+        "message": "Your message",
+        "send": "Send"
+    },
+    "contactinfo": {
+        "info": "Contact Information",
+        "infotext": "I am immediately available for any type of contract. Please feel free to send an email through the form or independently.",
+        "rrss": "Social Media",
+        "linkedin": "LinkedIn",
+        "twitter": "Twitter"
+    },
+    "navbar": {
+        "home": "Home",
+        "about": "About",
+        "contact": "Contact"
+    }
+}

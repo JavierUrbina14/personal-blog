@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { Divider, IconButton, Menu, MenuItem } from '@mui/material';
 import { MaterialUISwitch } from './SwitchButton';
 import SettingsIcon from '@mui/icons-material/Settings';
@@ -8,13 +8,23 @@ import { useTranslation } from 'react-i18next';
 
 
 export const SettingsMenu = () => {
-    const [t,i18n] = useTranslation("global")
+    const [t, i18n] = useTranslation("global")
+    const [language, setLanguage] = useState(localStorage.getItem('language') || 'es');
+
     const [anchorEl, setAnchorEl] = useState(null);
     const [languageMenuAnchorEl, setLanguageMenuAnchorEl] = useState(null);
 
     const open = Boolean(anchorEl);
     const openLanguageMenu = Boolean(languageMenuAnchorEl);
     const { darkMode, handleDarkMode } = useContext(DarkLightThemeContext);
+
+    useEffect(() => {
+        // Configura i18next con el idioma seleccionado
+        i18n.changeLanguage(language);
+
+        // Guarda el idioma seleccionado en localStorage
+        localStorage.setItem('language', language);
+    }, [language]);
 
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
@@ -32,11 +42,6 @@ export const SettingsMenu = () => {
     const handleClose = () => {
         setAnchorEl(null);
     };
-
-    const handleChangeLanguage = (language) => {
-        i18n.changeLanguage(language);
-        setLanguageMenuAnchorEl(null); 
-    }
 
     return (
         <div>
@@ -67,8 +72,8 @@ export const SettingsMenu = () => {
                     horizontal: 'left',
                 }}
             >
-                <MenuItem onClick={() => handleChangeLanguage('es')}>{t("settingsmenu.es")}</MenuItem>
-                <MenuItem onClick={() => handleChangeLanguage('en')}>{t("settingsmenu.en")}</MenuItem>
+                <MenuItem onClick={() => setLanguage('es')}>{t("settingsmenu.es")}</MenuItem>
+                <MenuItem onClick={() => setLanguage('en')}>{t("settingsmenu.en")}</MenuItem>
             </Menu>
         </div>
     );

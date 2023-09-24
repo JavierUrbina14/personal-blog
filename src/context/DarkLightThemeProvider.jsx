@@ -1,9 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { DarkTheme, LightTheme } from "../themes";
 import { DarkLightThemeContext } from "./DarkLightThemeContext";
 
 export const DarkLightThemeProvider = ({ children }) => {
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useState(localStorage.getItem('darkMode') === 'true');
+    useEffect(() => {
+        localStorage.setItem('darkMode', darkMode);
+    }, [darkMode])
 
     const handleDarkMode = () => {
         setDarkMode(!darkMode);

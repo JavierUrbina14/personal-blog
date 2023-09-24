@@ -19,11 +19,9 @@ export const SettingsMenu = () => {
     const { darkMode, handleDarkMode } = useContext(DarkLightThemeContext);
 
     useEffect(() => {
-        // Configura i18next con el idioma seleccionado
         i18n.changeLanguage(language);
-
-        // Guarda el idioma seleccionado en localStorage
         localStorage.setItem('language', language);
+        setLanguageMenuAnchorEl(null);
     }, [language]);
 
     const handleClick = (event) => {
@@ -31,12 +29,12 @@ export const SettingsMenu = () => {
     };
 
     const handleLanguageMenuClick = (event) => {
-        setLanguageMenuAnchorEl(event.currentTarget); // Abre el submenú de idioma
+        setLanguageMenuAnchorEl(event.currentTarget);
     };
 
 
     const handleLanguageMenuClose = () => {
-        setLanguageMenuAnchorEl(null); // Cierra el submenú de idioma
+        setLanguageMenuAnchorEl(null);
     };
 
     const handleClose = () => {

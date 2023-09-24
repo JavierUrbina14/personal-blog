@@ -7,7 +7,17 @@ import { useRef } from "react";
 export const Home = () => {
     const [t] = useTranslation("global")
 
-    const downloadRef = useRef();
+    const downloadEsRef = useRef();
+    const downloadEnRef = useRef();
+
+    const handleDownload = () => {
+        const language = localStorage.getItem("language")
+        if(language === 'es'){
+            downloadEsRef.current.click();
+        } else {
+            downloadEnRef.current.click();
+        }
+    }
 
     return (
         <PageLayout>
@@ -22,8 +32,9 @@ export const Home = () => {
                 <Link component={RouterLink} color={"inherit"} underline="hover" to="/projects">
                     <Button variant="contained" sx={{ color: "inherit", backgroundColor: "#Bf7625" }}>{t("home.projects")}</Button>
                 </Link>
-                <Button variant="contained" onClick={() => downloadRef.current.click()} sx={{ color: "inherit", backgroundColor: "#Bf7625" }}>{t("home.downloadcv")}</Button>
-                <a href="/Curriculum_Javier_Torres.pdf" download style={{display: "none"}} ref={downloadRef} />
+                <Button variant="contained" onClick={handleDownload} sx={{ color: "inherit", backgroundColor: "#Bf7625" }}>{t("home.downloadcv")}</Button>
+                <a href="/CV_Javier_Torres.pdf" download style={{display: "none"}} ref={downloadEsRef} />
+                <a href="/CV_Javier_Torres_EN.pdf" download style={{display: "none"}} ref={downloadEnRef} />
             </Grid>
         </PageLayout>
     );

@@ -12,11 +12,11 @@ export const ContactInfo = () => {
                 <li>+569 3024 9980</li>
                 <li>Santiago, Chile</li>
             </ul>
-            <h1>{t("contactinfo.rrss")}</h1>
+            {/* <h1>{t("contactinfo.rrss")}</h1>
             <div>
                 <p>{t("contactinfo.linkedin")}</p>
                 <p>{t("contactinfo.twitter")}</p>
-            </div>
+            </div> */}
         </Grid>
     )
 }

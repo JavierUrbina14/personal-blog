@@ -12,7 +12,7 @@ export const Home = () => {
 
     const handleDownload = () => {
         const language = localStorage.getItem("language")
-        if(language === 'es'){
+        if (language === 'es') {
             downloadEsRef.current.click();
         } else {
             downloadEnRef.current.click();
@@ -28,13 +28,17 @@ export const Home = () => {
                 </Typography>
                 <Typography variant="h6">{t("home.role")}</Typography>
             </Grid>
-            <Grid display={"flex"} justifyContent={"center"} sx={{ gap: "1rem", marginTop: "3.5rem" }}>
-                <Link component={RouterLink} color={"inherit"} underline="hover" to="/projects">
-                    <Button variant="contained" sx={{ color: "inherit", backgroundColor: "#Bf7625" }}>{t("home.projects")}</Button>
-                </Link>
-                <Button variant="contained" onClick={handleDownload} sx={{ color: "inherit", backgroundColor: "#Bf7625" }}>{t("home.downloadcv")}</Button>
-                <a href="/CV_Javier_Torres.pdf" download style={{display: "none"}} ref={downloadEsRef} />
-                <a href="/CV_Javier_Torres_EN.pdf" download style={{display: "none"}} ref={downloadEnRef} />
+            <Grid container justifyContent={"center"} sx={{ gap: "1rem", marginTop: "3.5rem" }}>
+                <Grid item>
+                    <Link component={RouterLink} color={"inherit"} underline="hover" to="/projects">
+                        <Button variant="contained" sx={{ color: "inherit", backgroundColor: "#Bf7625" }}>{t("home.projects")}</Button>
+                    </Link>
+                </Grid>
+                <Grid>
+                    <Button variant="contained" onClick={handleDownload} sx={{ color: "inherit", backgroundColor: "#Bf7625" }}>{t("home.downloadcv")}</Button>
+                </Grid>
+                <a href="/CV_Javier_Torres.pdf" download style={{ display: "none" }} ref={downloadEsRef} />
+                <a href="/CV_Javier_Torres_EN.pdf" download style={{ display: "none" }} ref={downloadEnRef} />
             </Grid>
         </PageLayout>
     );

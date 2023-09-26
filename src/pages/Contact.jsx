@@ -8,11 +8,11 @@ export const Contact = () => {
   const [t] = useTranslation("global")
   return (
     <PageLayout justifyContent="start" display="flex" flexDirection="row">
-      <Grid>
-        <Grid display={"flex"} justifyContent={"center"}>
+      <Grid container justifyContent={"center"}>
+        <Grid item display={"flex"} justifyContent={"center"} >
           <h1>{t("contact.title")}</h1>
         </Grid>
-        <Grid display={"flex"} sx={{margin: "0 10rem", gap: "5rem", height: "100%"}}>
+        <Grid item display={"flex"} direction={{ xs: "column-reverse", md: "row" }} sx={{ margin: { xs: "0 1rem", md: "0 10rem" }, gap: "5rem", height: "100%" }}>
           <ContactForm />
           <ContactInfo />
         </Grid>

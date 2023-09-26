@@ -28,7 +28,7 @@ export const ContactForm = () => {
     return (
         <form onSubmit={handleSubmit} style={{ display: "flex", alignItems: "center", width: "100%" }}>
             <Grid container spacing={2}>
-                <Grid item xs={4}>
+                <Grid item xs={12} md={4}>
                     <TextField
                         label={t("contactform.name")}
                         type="text"
@@ -41,7 +41,7 @@ export const ContactForm = () => {
                     // error={!!emailValid && formSubmitted}
                     />
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item xs={12} md={4}>
                     <TextField
                         label={t("contactform.phone")}
                         type="text"
@@ -52,7 +52,7 @@ export const ContactForm = () => {
                         onChange={onInputChange}
                     />
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item xs={12} md={4}>
                     <TextField
                         label={t("contactform.email")}
                         type="text"

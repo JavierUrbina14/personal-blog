@@ -13,6 +13,7 @@ export const PageLayout = ({ children, display = 'flex', flexDirection = 'column
         >
             <Navbar />
             <Box
+                className="animate__animated animate__fadeIn"
                 sx={{
                     display: display,
                     flexDirection: flexDirection,

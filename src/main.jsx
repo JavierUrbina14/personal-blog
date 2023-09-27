@@ -6,9 +6,10 @@ import { AppTheme } from './themes/AppTheme'
 import { DarkLightThemeProvider } from './context/DarkLightThemeProvider'
 import spanishDictionary from './languages/es.json'
 import englishDictionary from './languages/en.json'
-import './style.css'
 import i18next from 'i18next'
 import { I18nextProvider } from 'react-i18next';
+import 'animate.css';
+import './style.css'
 
 i18next.init({
   interpolation: { escapeValue: false },

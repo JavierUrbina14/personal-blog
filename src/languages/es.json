@@ -20,7 +20,8 @@
         "phone": "Tu telefono",
         "email": "Tu email",
         "message": "Tu mensaje",
-        "send": "Enviar"
+        "send": "Enviar",
+        "emailsent": "Se ha enviado el correo, ¡Muchas gracias!"
     },
     "contactinfo": {
         "info": "Información de contacto",

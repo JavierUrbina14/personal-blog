@@ -1,7 +1,7 @@
-import { Grid, Typography } from "@mui/material"
-import { PageLayout } from "../layout/PageLayout"
-import { ProjectItem } from "../components/ProjectItem"
 import { useTranslation } from "react-i18next"
+import { PageLayout } from "../layout"
+import { ProjectItem } from "../components"
+import { Grid, Typography } from "@mui/material"
 
 export const Projects = () => {
     const [t] = useTranslation("global")

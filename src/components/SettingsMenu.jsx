@@ -1,10 +1,10 @@
 import { useContext, useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { DarkLightThemeContext } from '../context';
+import { SwitchButton } from './';
 import { Divider, IconButton, Menu, MenuItem } from '@mui/material';
-import { MaterialUISwitch } from './SwitchButton';
 import SettingsIcon from '@mui/icons-material/Settings';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
-import { DarkLightThemeContext } from '../context/DarkLightThemeContext';
-import { useTranslation } from 'react-i18next';
 
 
 export const SettingsMenu = () => {
@@ -53,7 +53,7 @@ export const SettingsMenu = () => {
             >
                 <MenuItem onClick={handleLanguageMenuClick}>{t("settingsmenu.language")}<KeyboardArrowRightIcon /></MenuItem>
                 <Divider />
-                <MenuItem>{t("settingsmenu.theme")}<MaterialUISwitch checked={darkMode} onChange={handleDarkMode} /></MenuItem>
+                <MenuItem>{t("settingsmenu.theme")}<SwitchButton checked={darkMode} onChange={handleDarkMode} /></MenuItem>
             </Menu>
 
             {/* Submenú de Idioma */}

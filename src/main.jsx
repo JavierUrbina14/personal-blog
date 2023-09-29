@@ -1,13 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { AppRouter } from './router/AppRouter'
+import { AppRouter } from './router'
 import { BrowserRouter } from 'react-router-dom'
-import { AppTheme } from './themes/AppTheme'
-import { DarkLightThemeProvider } from './context/DarkLightThemeProvider'
-import spanishDictionary from './languages/es.json'
-import englishDictionary from './languages/en.json'
-import i18next from 'i18next'
+import { AppTheme } from './themes'
+import { DarkLightThemeProvider } from './context'
 import { I18nextProvider } from 'react-i18next';
+import i18next from 'i18next'
+import englishDictionary from './languages/en.json'
+import spanishDictionary from './languages/es.json'
 import 'animate.css';
 import './style.css'
 

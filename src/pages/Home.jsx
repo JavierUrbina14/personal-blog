@@ -1,6 +1,6 @@
 import { Button, Grid, Link, Typography } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom"
-import { PageLayout } from "../layout/PageLayout";
+import { PageLayout } from "../layout";
 import { useTranslation } from "react-i18next";
 import { useRef } from "react";
 

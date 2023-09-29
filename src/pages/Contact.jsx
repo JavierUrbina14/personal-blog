@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next"
-import { ContactInfo } from "../components/ContactInfo"
-import { ContactForm } from "../components/ContactForm"
-import { PageLayout } from "../layout/PageLayout"
+import { ContactInfo, ContactForm } from "../components"
+import { PageLayout } from "../layout"
 import { Grid } from "@mui/material"
 
 export const Contact = () => {

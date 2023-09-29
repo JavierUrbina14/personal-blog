@@ -1,8 +1,8 @@
-import { Grid, Link } from "@mui/material"
 import { Link as RouterLink } from "react-router-dom"
-import CodeOffIcon from '@mui/icons-material/CodeOff';
-import { SettingsMenu } from "../components/SettingsMenu";
+import { SettingsMenu } from "../components";
 import { useTranslation } from "react-i18next";
+import { Grid, Link } from "@mui/material"
+import CodeOffIcon from '@mui/icons-material/CodeOff';
 
 
 export const Navbar = () => {

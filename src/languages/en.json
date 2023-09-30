@@ -7,13 +7,17 @@
         "downloadcv": "Download CV"
     },
     "projects": {
-        "projects": "Projects",
+        "projects": "PROJECTS"
+    },
+    "projectswiper": {
         "journaldescription": "Note-taking application with user authentication",
         "gifdescription": "GIF application with search functionality",
-        "heroesdescription": "Superheroes application with search functionality"
+        "heroesdescription": "Superheroes application with search functionality",
+        "goproject": "Go to project",
+        "tecnologies": "Technologies used"
     },
     "contact": {
-        "title": "Get in touch ツ"
+        "title": "GET IN TOUCH ツ"
     },
     "contactform": {
         "name": "Your name",

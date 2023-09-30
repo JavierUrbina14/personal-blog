@@ -1,6 +1,6 @@
 export * from './ContactForm';
 export * from './ContactInfo';
 export * from './Notification';
-export * from './ProjectItem';
+export * from './ProjectSwiper';
 export * from './SettingsMenu';
 export * from './SwitchButton';

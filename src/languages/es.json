@@ -7,13 +7,17 @@
         "downloadcv": "Descargar CV"
     },
     "projects": {
-        "projects": "Proyectos",
+        "projects": "PROJECTOS"
+    },
+    "projectswiper": {
         "journaldescription": "Aplicación de notas con autenticación de usuarios",
         "gifdescription": "Aplicación de gifs con buscador",
-        "heroesdescription": "Aplicación de superhéroes con buscador"
+        "heroesdescription": "Aplicación de superhéroes con buscador",
+        "goproject": "Ir al proyecto",
+        "tecnologies": "Tecnologías utilizadas"
     },
     "contact": {
-        "title": "Ponete en contacto ツ"
+        "title": "PONETE EN CONTACTO ツ"
     },
     "contactform": {
         "name": "Tu nombre",

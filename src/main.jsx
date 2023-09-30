@@ -10,6 +10,7 @@ import englishDictionary from './languages/en.json'
 import spanishDictionary from './languages/es.json'
 import 'animate.css';
 import './style.css'
+import './ProjectStyle.css'
 
 i18next.init({
   interpolation: { escapeValue: false },

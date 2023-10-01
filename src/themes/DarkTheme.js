@@ -5,11 +5,12 @@ export const DarkTheme = createTheme({
       mode: "dark",
         primary: {
             main: "#21232A",
+            light: "#434755",
             button: "#Bf7625",
             footer: "#12171a"
         },
         secondary: {
-            main: "#0E1323"
+            main: "#171B28"
         },
         text:{
             primary: "#f0f4f4",

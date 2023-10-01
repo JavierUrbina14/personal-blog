@@ -44,5 +44,9 @@
         "es": "Spanish",
         "en": "English",
         "theme": "Theme: "
+    },
+    "about": {
+        "title": "ABOUT ME",
+        "description": "Hello! 😃 My name is Javier Hernán Torres Urbina, I am 22 years old, and I live in Santiago, Chile. I am passionate about technology 💻, and that's why I devoted my life to Computer Engineering 🧠. In early 2019, I started my career at the institute, and between Cybersecurity and web development, I decided to specialize in the latter 🌐. I began my learning journey by watching videos on YouTube 📺 and then expanded my knowledge through Udemy, official documentation, and other educational platforms. I love to put into practice what I learn by working on personal projects, most of which I share on my GitHub 🚀. At this moment, I have solid knowledge in technologies like ReactJS, JavaScript, Node.js, MySQL, and PostgreSQL 🔧. I am always looking for new ways to learn and grow in this exciting field! 👨‍💻✨"
     }
 }

@@ -10,7 +10,6 @@ import { EffectCards } from "swiper/modules";
 import { Button, Grid, Typography } from "@mui/material";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Tecnology } from "./Tecnology";
 
 const projectURLs = [
     "https://heroes-jt.netlify.app/",
@@ -27,7 +26,7 @@ const projectTitles = [
 const projectTechnologies = [
     ["Reactjs", "Bootstrap", "Nodejs"],
     ["Reactjs", "Nodejs", "Api"],
-    ["Reactjs", "Nodejs", "Mui", "Firebase"],
+    ["Reactjs", "Nodejs", "MaterialUI", "Firebase"],
 ];
 
 export const ProjectSwiper = () => {
@@ -62,9 +61,9 @@ export const ProjectSwiper = () => {
                     className="mySwiper"
                     onSlideChange={(swiper) => handleSlideChange(swiper)}
                 >
-                    <SwiperSlide />
-                    <SwiperSlide />
-                    <SwiperSlide />
+                    <SwiperSlide style={{background: 'linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/img/heroes-app-img.png") no-repeat 50% 50% / cover'}}/>
+                    <SwiperSlide style={{background: 'linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/img/Gif-app-img.png") no-repeat 50% 50% / cover'}}/>
+                    <SwiperSlide style={{background: 'linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/img/Journal-app-img.png") no-repeat 50% 50% / cover'}}/>
                 </Swiper>
             </Grid>
             <Grid
@@ -90,17 +89,18 @@ export const ProjectSwiper = () => {
                         gap: "1rem",
                         display: "grid",
                         gridTemplateColumns: "repeat(auto-fit, minmax(40px, 1fr))",
-                        backgroundColor: "black",
+                        backgroundColor: "primary.light",
                         borderRadius: ".5rem"
                     }}
                 >
                     
                     {currentTechnologies.map((technology, index) => (
                         <div key={index} style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                            <Tecnology
-                                icon={`img/${technology.toLowerCase()}_icon.png`}
+                            <img
+                                src={`img/${technology.toLowerCase()}_icon.png`}
                                 alt={technology}
                                 title={technology}
+                                style={{ maxWidth: "40px" }}
                             />
                         </div>
                     ))}

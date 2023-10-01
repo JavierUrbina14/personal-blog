@@ -15,7 +15,7 @@ export const About = () => {
                     {t("about.title")}
                 </Typography>
             </Grid>
-            <Grid display={"flex"} margin={"1rem 15rem"} gap={"5rem"} flexDirection={{ xs: "column", md: "row" }}>
+            <Grid display={"flex"} margin={"1rem 10rem"} gap={"5rem"} flexDirection={{ xs: "column", md: "row" }}>
                 <Grid display={"flex"} alignItems={"center"} margin={{ xs: "0 2rem", md: "0rem" }}>
                     <p>{t("about.description")}</p>
                 </Grid>

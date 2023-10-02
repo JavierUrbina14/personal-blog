@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useForm, useNotification } from "../hooks"
 import { useTranslation } from "react-i18next"
 import { Notification } from "./";
@@ -14,21 +15,30 @@ const initialFormContact = {
 
 export const ContactForm = () => {
     const [t] = useTranslation("global")
-    const { name, phone, email, message, onInputChange } = useForm(initialFormContact);
-    const { open, messageNotification, severity, disabled, handleNotification, handleClose } = useNotification();
+    const FormValidations = {
+        name: [(value) => value.length > 0, t("contactform.namevalid")],
+        phone: [(value) => value.length >= 6, t("contactform.phonevalid")],
+        email: [(value) => value.includes('@'), t("contactform.emailvalid")],
+        message: [(value) => value.length >= 50, t("contactform.messagevalid")],
+    }
 
+    const { name, phone, email, message, nameValid, phoneValid, emailValid, messageValid, isFormValid, onInputChange } = useForm(initialFormContact, FormValidations);
+    const [formSubmitted, setFormSubmitted] = useState(false);
+    const { open, messageNotification, severity, disabled, handleNotification, handleClose } = useNotification();
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        setFormSubmitted(true)
+        if (!isFormValid) return
         emailjs.send("service_ljans2d", "template_xo8outb", {
             user_name: name,
             message: message,
             user_phone: phone,
             user_email: email,
         }, "AL_rLlhZZ34GoeVHC")
-        .then(
-            handleNotification(t("contactform.emailsent"),"success")
-        );
+            .then(
+                handleNotification(t("contactform.emailsent"), "success")
+            );
     }
 
     return (
@@ -44,8 +54,8 @@ export const ContactForm = () => {
                         value={name}
                         onChange={onInputChange}
                         disabled={disabled}
-                    // helperText={emailValid}
-                    // error={!!emailValid && formSubmitted}
+                        helperText={nameValid}
+                        error={!!nameValid && formSubmitted}
                     />
                 </Grid>
                 <Grid item xs={12} md={4}>
@@ -58,6 +68,8 @@ export const ContactForm = () => {
                         value={phone}
                         onChange={onInputChange}
                         disabled={disabled}
+                        helperText={phoneValid}
+                        error={!!phoneValid && formSubmitted}
                     />
                 </Grid>
                 <Grid item xs={12} md={4}>
@@ -70,6 +82,8 @@ export const ContactForm = () => {
                         value={email}
                         onChange={onInputChange}
                         disabled={disabled}
+                        helperText={emailValid}
+                        error={!!emailValid && formSubmitted}
                     />
                 </Grid>
                 <Grid item xs={12}>
@@ -84,6 +98,8 @@ export const ContactForm = () => {
                         value={message}
                         onChange={onInputChange}
                         disabled={disabled}
+                        helperText={messageValid}
+                        error={!!messageValid && formSubmitted}
                     />
                 </Grid>
                 <Grid item container direction={"row"} justifyContent={"end"}>

@@ -17,7 +17,7 @@
         "tecnologies": "Tecnologías utilizadas"
     },
     "contact": {
-        "title": "PONETE EN CONTACTO ツ"
+        "title": "MANTENTE EN CONTACTO ツ"
     },
     "contactform": {
         "name": "Tu nombre",
@@ -25,7 +25,11 @@
         "email": "Tu email",
         "message": "Tu mensaje",
         "send": "Enviar",
-        "emailsent": "Se ha enviado el correo, ¡Muchas gracias!"
+        "emailsent": "Se ha enviado el correo, ¡Muchas gracias!",
+        "namevalid": "Nombre requerido",
+        "phonevalid": "Telefono requerido",
+        "emailvalid": "El correo debe tener un @",
+        "messagevalid": "El mensaje debe tener como minimo 50 carácteres"
     },
     "contactinfo": {
         "info": "Información de contacto",
@@ -47,6 +51,6 @@
     },
     "about": {
         "title": "SOBRE MI",
-        "description": "¡Hola! 😃 Mi nombre es Javier Hernán Torres Urbina, tengo 22 años y vivo en Santiago, Chile. Soy un apasionado de la tecnología 💻, y por eso dedique mi vida a la Ingeniería en informática 🧠. A principios de 2019, comencé mi carrera en el instituto y entre CiberSeguridad y desarrollo web decidí especializarme en este último 🌐. Empecé mi viaje de aprendizaje viendo videos en YouTube 📺 y luego amplié mis conocimientos a través de Udemy, la documentación oficial y otras plataformas educativas. Me encanta poner en práctica lo que aprendo al trabajar en proyectos personales, la mayoría de los cuales comparto en mi GitHub 🚀. En este momento, tengo conocimientos sólidos en tecnologías como ReactJS, JavaScript, Node.js, MySQL y PostgreSQL 🔧. ¡Siempre estoy buscando nuevas formas de aprender y crecer en este emocionante campo! 👨‍💻✨"
+        "description": "¡Hola! 😃 Mi nombre es Javier Hernán Torres Urbina, tengo 22 años y vivo en Santiago, Chile. Soy un apasionado de la tecnología 💻, y por eso dedique mi vida a la Ingeniería en informática 🧠. A principios de 2019, comencé mi carrera en el instituto donde me enamoré del desarrollo web y decidí especializarme en este último 🌐. Empecé mi viaje de aprendizaje viendo videos en YouTube 📺 y luego amplié mis conocimientos a través de Udemy, la documentación oficial y otras plataformas educativas. Me encanta poner en práctica lo que aprendo al trabajar en proyectos personales, la mayoría de los cuales comparto en mi GitHub 🚀. En este momento, tengo conocimientos sólidos en tecnologías como ReactJS, JavaScript, Node.js, MySQL y PostgreSQL 🔧. ¡Siempre estoy buscando nuevas formas de aprender y crecer en este emocionante campo! 👨‍💻✨"
     }
 }

@@ -15,12 +15,12 @@ export const About = () => {
                     {t("about.title")}
                 </Typography>
             </Grid>
-            <Grid display={"flex"} margin={"1rem 10rem"} gap={"5rem"} flexDirection={{ xs: "column", md: "row" }}>
-                <Grid display={"flex"} alignItems={"center"} margin={{ xs: "0 2rem", md: "0rem" }}>
+            <Grid display={"flex"} margin={{xs:"1rem 2rem", sm:"1rem 4rem", md: "1rem 4rem", lg: "1rem 15rem", xl:"1rem 20rem"}} gap={"5rem"} flexDirection={{ xs: "column", md: "row" }}>
+                <Grid display={"flex"} alignItems={"center"} fontSize={{lg:"1rem", xl:"1.3rem"}} margin={{xs:"1rem 2rem", md:"0"}}>
                     <p>{t("about.description")}</p>
                 </Grid>
-                <Grid>
-                    <img style={{ width: "25rem" }} src={imageSrc} alt="" />
+                <Grid display={"flex"} justifyContent={"center"} alignItems={"center"}>
+                    <img style={{ width: "25rem", height:"25rem" }} src={imageSrc} alt="" />
                 </Grid>
             </Grid>
         </PageLayout>

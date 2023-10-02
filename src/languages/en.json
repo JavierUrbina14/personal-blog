@@ -25,7 +25,11 @@
         "email": "Your email",
         "message": "Your message",
         "send": "Send",
-        "emailsent": "The email has been sent, thank you very much!"
+        "emailsent": "The email has been sent, Thank you!",
+        "namevalid": "Name required",
+        "phonevalid": "Phone required",
+        "emailvalid": "Email must contain an @",
+        "messagevalid": "Message must be at least 50 characters long"
     },
     "contactinfo": {
         "info": "Contact Information",
@@ -47,6 +51,6 @@
     },
     "about": {
         "title": "ABOUT ME",
-        "description": "Hello! 😃 My name is Javier Hernán Torres Urbina, I am 22 years old, and I live in Santiago, Chile. I am passionate about technology 💻, and that's why I devoted my life to Computer Engineering 🧠. In early 2019, I started my career at the institute, and between Cybersecurity and web development, I decided to specialize in the latter 🌐. I began my learning journey by watching videos on YouTube 📺 and then expanded my knowledge through Udemy, official documentation, and other educational platforms. I love to put into practice what I learn by working on personal projects, most of which I share on my GitHub 🚀. At this moment, I have solid knowledge in technologies like ReactJS, JavaScript, Node.js, MySQL, and PostgreSQL 🔧. I am always looking for new ways to learn and grow in this exciting field! 👨‍💻✨"
+        "description": "Hello! 😃 My name is Javier Hernán Torres Urbina, I'm 22 years old, and I live in Santiago, Chile. I'm passionate about technology 💻, which is why I dedicated my life to Computer Engineering 🧠. In early 2019, I began my journey at the institute, where I fell in love with web development and decided to specialize in it 🌐. I started my learning journey by watching videos on YouTube 📺 and then expanded my knowledge through Udemy, official documentation, and other educational platforms. I love putting into practice what I learn by working on personal projects, most of which I share on my GitHub 🚀. At this moment, I have solid knowledge in technologies such as ReactJS, JavaScript, Node.js, MySQL, and PostgreSQL 🔧. I'm always looking for new ways to learn and grow in this exciting field! 👨‍💻✨"
     }
 }

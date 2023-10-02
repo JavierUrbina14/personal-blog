@@ -12,7 +12,7 @@ export const Navbar = () => {
             <Grid>
                 <CodeOffIcon sx={{ fontSize: 40 }} />
             </Grid>
-            <Grid display={"flex"} alignItems={"center"} gap={1}>
+            <Grid display={"flex"} alignItems={"center"} gap={1.5}>
                 <Link component={RouterLink} color={"inherit"} underline="hover" to="/">{t("navbar.home")}</Link>
                 <Link component={RouterLink} color={"inherit"} underline="hover" to="/about">{t("navbar.about")}</Link>
                 <Link component={RouterLink} color={"inherit"} underline="hover" to="/contact">{t("navbar.contact")}</Link>

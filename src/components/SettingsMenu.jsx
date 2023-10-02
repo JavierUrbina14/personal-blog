@@ -24,6 +24,11 @@ export const SettingsMenu = () => {
         setLanguageMenuAnchorEl(null);
     }, [language]);
 
+    const handleLanguage = (language) => {
+        setLanguage(language);
+        window.location.reload();
+    }
+
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
     };
@@ -70,8 +75,8 @@ export const SettingsMenu = () => {
                     horizontal: 'left',
                 }}
             >
-                <MenuItem onClick={() => setLanguage('es')}>{t("settingsmenu.es")}</MenuItem>
-                <MenuItem onClick={() => setLanguage('en')}>{t("settingsmenu.en")}</MenuItem>
+                <MenuItem onClick={() => handleLanguage('es')}>{t("settingsmenu.es")}</MenuItem>
+                <MenuItem onClick={() => handleLanguage('en')}>{t("settingsmenu.en")}</MenuItem>
             </Menu>
         </div>
     );

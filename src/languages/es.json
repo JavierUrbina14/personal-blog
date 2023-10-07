@@ -7,7 +7,7 @@
         "downloadcv": "Descargar CV"
     },
     "projects": {
-        "projects": "PROJECTOS"
+        "projects": "PROYECTOS"
     },
     "projectswiper": {
         "journaldescription": "Aplicación de notas con autenticación de usuarios",
@@ -17,7 +17,7 @@
         "tecnologies": "Tecnologías utilizadas"
     },
     "contact": {
-        "title": "MANTENTE EN CONTACTO ツ"
+        "title": "CONTACTAME ツ"
     },
     "contactform": {
         "name": "Tu nombre",
@@ -27,9 +27,9 @@
         "send": "Enviar",
         "emailsent": "Se ha enviado el correo, ¡Muchas gracias!",
         "namevalid": "Nombre requerido",
-        "phonevalid": "Telefono requerido",
+        "phonevalid": "Teléfono requerido",
         "emailvalid": "El correo debe tener un @",
-        "messagevalid": "El mensaje debe tener como minimo 50 carácteres"
+        "messagevalid": "El mensaje debe tener como mínimo 50 carácteres"
     },
     "contactinfo": {
         "info": "Información de contacto",

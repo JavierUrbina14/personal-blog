@@ -78,10 +78,10 @@ export const ProjectSwiper = () => {
                 }}
             >
                 <Grid>
-                    <Typography variant="h5">{projectTitles[currentProject]}</Typography>
-                    <Typography>{projectDescriptions[currentProject]}</Typography>
+                    <Typography color={"text.main"} variant="h5">{projectTitles[currentProject]}</Typography>
+                    <Typography color={"text.main"}>{projectDescriptions[currentProject]}</Typography>
                 </Grid>
-                <Typography marginTop={"auto"}>{t("projectswiper.tecnologies")}</Typography>
+                <Typography color={"text.main"} marginTop={"auto"}>{t("projectswiper.tecnologies")}</Typography>
                 <Grid
                     container
                     justifyContent="center"
@@ -89,7 +89,6 @@ export const ProjectSwiper = () => {
                         gap: "1rem",
                         display: "grid",
                         gridTemplateColumns: "repeat(auto-fit, minmax(40px, 1fr))",
-                        backgroundColor: "primary.light",
                         borderRadius: ".5rem"
                     }}
                 >
@@ -109,7 +108,7 @@ export const ProjectSwiper = () => {
                     variant="contained"
                     onClick={handleVerProyectoClick}
                     sx={{
-                        color: "inherit",
+                        color: "secondary.button",
                         backgroundColor: "primary.button",
                         alignSelf: "center",
                     }}

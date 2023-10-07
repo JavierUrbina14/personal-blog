@@ -5,6 +5,7 @@ import { Notification } from "./";
 import { Button, Grid, TextField } from "@mui/material"
 import emailjs from '@emailjs/browser';
 import SendIcon from '@mui/icons-material/Send';
+import { HandleTheme } from "../containers/HandleTheme";
 
 const initialFormContact = {
     name: "",
@@ -25,6 +26,7 @@ export const ContactForm = () => {
     const { name, phone, email, message, nameValid, phoneValid, emailValid, messageValid, isFormValid, onInputChange } = useForm(initialFormContact, FormValidations);
     const [formSubmitted, setFormSubmitted] = useState(false);
     const { open, messageNotification, severity, disabled, handleNotification, handleClose } = useNotification();
+    const { inputFormColor } = HandleTheme();
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -41,6 +43,8 @@ export const ContactForm = () => {
             );
     }
 
+
+
     return (
         <form onSubmit={handleSubmit} style={{ display: "flex", alignItems: "center", width: "100%" }}>
             <Grid container spacing={2}>
@@ -49,7 +53,7 @@ export const ContactForm = () => {
                         label={t("contactform.name")}
                         type="text"
                         fullWidth
-                        color="warning"
+                        color={inputFormColor}
                         name='name'
                         value={name}
                         onChange={onInputChange}
@@ -63,7 +67,7 @@ export const ContactForm = () => {
                         label={t("contactform.phone")}
                         type="text"
                         fullWidth
-                        color="warning"
+                        color={inputFormColor}
                         name='phone'
                         value={phone}
                         onChange={onInputChange}
@@ -77,7 +81,7 @@ export const ContactForm = () => {
                         label={t("contactform.email")}
                         type="text"
                         fullWidth
-                        color="warning"
+                        color={inputFormColor}
                         name='email'
                         value={email}
                         onChange={onInputChange}
@@ -91,7 +95,7 @@ export const ContactForm = () => {
                         label={t("contactform.message")}
                         type="text"
                         fullWidth
-                        color="warning"
+                        color={inputFormColor}
                         multiline
                         rows={7}
                         name='message'
@@ -103,7 +107,7 @@ export const ContactForm = () => {
                     />
                 </Grid>
                 <Grid item container direction={"row"} justifyContent={"end"}>
-                    <Button type='submit' variant="contained" endIcon={<SendIcon />} disabled={disabled} sx={{ color: "inherit", backgroundColor: "#Bf7625" }}>
+                    <Button type='submit' variant="contained" endIcon={<SendIcon />} disabled={disabled} sx={{ color: "secondary.button", backgroundColor: "primary.button" }}>
                         {t("contactform.send")}
                     </Button>
                     <Notification open={open} text={messageNotification} severity={severity} close={handleClose} />

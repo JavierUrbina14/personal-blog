@@ -55,7 +55,18 @@ body {
     box-sizing: border-box;
 }
 
-.degradado {
+.degradadoBlueDark {
+    background: -webkit-linear-gradient(#ffffff, #2fc2d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.degradadoBlueLight {
+    background: -webkit-linear-gradient(#101334, #3199d7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.degradadoOrange {
     background: -webkit-linear-gradient(#932120, #dd950f);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

@@ -1,3 +1,5 @@
-export * from './DarkTheme'
-export * from './LightTheme'
+export * from './OrangeDark'
+export * from './OrangeLight'
+export * from './BlueDark'
+export * from './BlueLight'
 export * from './AppTheme'

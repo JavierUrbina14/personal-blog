@@ -1,17 +1,16 @@
 import { Grid, Typography } from "@mui/material";
 import { PageLayout } from "../layout/PageLayout";
 import { useTranslation } from "react-i18next";
-import { useContext } from "react";
-import { DarkLightThemeContext } from "../context";
+import { HandleTheme } from "../containers/HandleTheme";
 
 export const About = () => {
     const [t] = useTranslation("global")
-    const { darkMode } = useContext(DarkLightThemeContext);
-    const imageSrc = darkMode ? "/img/developer_dark.gif" : "/img/developer_light.gif";
+    const { degradadoMode, imageSrc } = HandleTheme();
+    
     return (
         <PageLayout>
             <Grid display="flex" justifyContent="center">
-                <Typography className="degradado" variant="h4" fontWeight="bold">
+                <Typography className={degradadoMode} variant="h4" fontWeight="bold">
                     {t("about.title")}
                 </Typography>
             </Grid>

@@ -10,11 +10,12 @@
         "projects": "PROJECTS"
     },
     "projectswiper": {
+        "goproject": "Go to project",
+        "tecnologies": "Technologies used",
         "journaldescription": "Note-taking application with user authentication",
         "gifdescription": "GIF application with search functionality",
         "heroesdescription": "Superheroes application with search functionality",
-        "goproject": "Go to project",
-        "tecnologies": "Technologies used"
+        "gifangulardescription": "Angular-built GIF application"
     },
     "contact": {
         "title": "CONTACT ME ツ"

@@ -23,7 +23,7 @@ export const Navbar = () => {
 
     return (
         <Grid container direction={"row"} justifyContent={"space-around"} alignItems={"center"} sx={{ position: "absolute", top: "0", paddingTop: "1rem", backgroundColor: "primary.main" }}>
-            <Grid width={{ md: "110px" }} display={"flex"} justifyContent={"center"}>
+            <Grid component={RouterLink} color={"inherit"} underline="none" to={"/"} width={{ md: "110px" }} display={"flex"} justifyContent={"center"}>
                 <CodeOffIcon sx={{ fontSize: 40 }} />
             </Grid>
             <Grid display={"flex"} alignItems={"center"} gap={1.5}>

@@ -15,18 +15,21 @@ const projectURLs = [
     "https://heroes-jt.netlify.app/",
     "https://gifexpert-jt.netlify.app/",
     "https://journal-jt.netlify.app/",
+    "https://gif-expert-angular.netlify.app",
 ];
 
 const projectTitles = [
     "Heroes App",
-    "Gif App",
+    "Gif React App",
     "Journal App",
+    "Gif Angular App",
 ]
 
 const projectTechnologies = [
     ["Reactjs", "Bootstrap", "Nodejs"],
     ["Reactjs", "Nodejs", "Api"],
     ["Reactjs", "Nodejs", "MaterialUI", "Firebase"],
+    ["Angular", "Bootstrap", "Nodejs"]
 ];
 
 export const ProjectSwiper = () => {
@@ -38,6 +41,7 @@ export const ProjectSwiper = () => {
         t("projectswiper.heroesdescription"),
         t("projectswiper.gifdescription"),
         t("projectswiper.journaldescription"),
+        t("projectswiper.gifangulardescription"),
     ];
 
     const handleSlideChange = (swiper) => {
@@ -64,6 +68,7 @@ export const ProjectSwiper = () => {
                     <SwiperSlide style={{background: 'linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/img/heroes-app-img.png") no-repeat 50% 50% / cover'}}/>
                     <SwiperSlide style={{background: 'linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/img/Gif-app-img.png") no-repeat 50% 50% / cover'}}/>
                     <SwiperSlide style={{background: 'linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/img/Journal-app-img.png") no-repeat 50% 50% / cover'}}/>
+                    <SwiperSlide style={{background: 'linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("/img/GifAngular-app-img.png") no-repeat 50% 50% / cover'}}/>
                 </Swiper>
             </Grid>
             <Grid

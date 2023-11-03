@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { AppRouter } from './router'
 import { BrowserRouter } from 'react-router-dom'
 import { AppTheme } from './themes'
-import { DarkLightThemeProvider } from './context'
+import { DarkLightThemeProvider, HandleProjectProvider } from './context'
 import { I18nextProvider } from 'react-i18next';
 import i18next from 'i18next'
 import englishDictionary from './languages/en.json'
@@ -28,11 +28,13 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       <DarkLightThemeProvider>
-        <AppTheme>
-          <I18nextProvider i18n={i18next}>
-            <AppRouter />
-          </I18nextProvider>
-        </AppTheme>
+        <HandleProjectProvider>
+          <AppTheme>
+            <I18nextProvider i18n={i18next}>
+              <AppRouter />
+            </I18nextProvider>
+          </AppTheme>
+        </HandleProjectProvider>
       </DarkLightThemeProvider>
     </BrowserRouter>
   </React.StrictMode>,

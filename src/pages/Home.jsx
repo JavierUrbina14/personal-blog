@@ -40,8 +40,8 @@ export const Home = () => {
                 <Grid>
                     <Button variant="contained" onClick={handleDownload} sx={{ color: "secondary.button", backgroundColor: "primary.button" }}>{t("home.downloadcv")}</Button>
                 </Grid>
-                <a href="/CV_Javier_Torres.pdf" download style={{ display: "none" }} ref={downloadEsRef} />
-                <a href="/CV_Javier_Torres_EN.pdf" download style={{ display: "none" }} ref={downloadEnRef} />
+                <a href="/cv-javier-hernan-torres-urbina.pdf" download style={{ display: "none" }} ref={downloadEsRef} />
+                <a href="/cv-javier-hernan-torres-urbina-en.pdf" download style={{ display: "none" }} ref={downloadEnRef} />
             </Grid>
         </PageLayout>
     );
